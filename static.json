@@ -1,0 +1,9 @@
+{
+  "headers": {
+    "/login/": {
+      "X-Author":"nikotinka",
+      "Access-Control-Allow-Origin":"*",
+      "Content-Type":"text/plain; charset=UTF-8"
+    }
+  }
+}
