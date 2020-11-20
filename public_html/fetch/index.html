@@ -1,4 +1,14 @@
 <html>
    <button id="bt" > Кнопка </button>
    <input id="inp" type="text">
+    
+   <script>
+     function start(){
+       let inp = document.querySelector("input").value;
+       let result = fetch(inp).then(response => response.text());
+       document.querySelector("input").value = result;
+     }
+     
+     document.querySelector("button").addEventListener("click", start);
+   </script>
 </html>
