@@ -1,14 +1,19 @@
 <html>
-   <button id="bt" > Кнопка </button>
+  <button id="bt" > GetHtml </button>
    <input id="inp" type="text">
     
    <script>
-     function start(){
-       let inp = document.querySelector("input").value;
-       let result = fetch(inp).then(response => response.text());
-       document.querySelector("input").value = result;
+     function getHtmlText(){
+       const url = document.getElementById("inp").value;
+       fetch(url)
+       .then((response) => {
+         return response.text();
+       })
+       .then((data) => {
+         document.getElementById("inp").value = data;
+       });
      }
      
-     document.querySelector("button").addEventListener("click", start);
+     document.getElementById("bt").addEventListener("click", getHtmlText);
    </script>
 </html>
