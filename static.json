@@ -13,7 +13,7 @@
     
      "/promise/": {
       "Access-Control-Allow-Origin":"*"
-    }
+    },
   
      "/fetch/": {
       "Access-Control-Allow-Origin":"*"
