@@ -4,6 +4,8 @@
    <input id="inp" type="text">
     
    <script>
+     document.getElementById("bt").addEventListener("click", getHtmlText);
+     
      function getHtmlText(){
        const url = document.getElementById("inp").value;
        fetch(url)
@@ -17,7 +19,5 @@
          console.log(reject)
        });
      }
-     
-     document.getElementById("bt").addEventListener("click", getHtmlText);
    </script>
 </html>
